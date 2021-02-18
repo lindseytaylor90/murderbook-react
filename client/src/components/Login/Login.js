@@ -9,7 +9,7 @@ import user from '../../data/user';
 import posts from '../../data/posts';
 
 const Login = () => {
-    const [dispatch] = useStateValue();
+    const [state, dispatch] = useStateValue();
 
     const signIn = () => {
         dispatch({
