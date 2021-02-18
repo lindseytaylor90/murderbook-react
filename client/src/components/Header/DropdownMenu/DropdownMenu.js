@@ -22,7 +22,7 @@ import ReportIcon from '@material-ui/icons/Report';
 import { useStateValue } from '../../../state/Provider'
 
 const DropdownMenu = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user },] = useStateValue();
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
@@ -68,7 +68,6 @@ const DropdownMenu = () => {
             onEnter={calcHeight}
         >
             <div className="menu">
-                {/* <DropdownItem>My Profile</DropdownItem> */}
                 <DropdownItemImage image={user.photoURL}>{user.displayName}</DropdownItemImage>
 
                 <hr className="hrTag" />
@@ -95,17 +94,11 @@ const DropdownMenu = () => {
 
                 <DropdownItem
                     leftIcon={<ArrowIcon />}
-                >Switch to Classic Facebook</DropdownItem>
+                >Switch to Classic murderbook</DropdownItem>
 
                 <DropdownItem
                     leftIcon={<ExitToAppIcon />}
                 >Log Out</DropdownItem>
-
-                {/* <DropdownItem
-                    leftIcon="🦧"
-                    rightIcon={<ChevronIcon />}
-                    goToMenu="animals"
-                >Animals</DropdownItem> */}
             </div>
         </CSSTransition>
   
@@ -146,24 +139,6 @@ const DropdownMenu = () => {
                 <DropdownItem leftIcon={<ReportIcon />}>Report a Problem</DropdownItem>
             </div>
         </CSSTransition>
-  
-        {/* <CSSTransition
-            in={activeMenu === 'animals'}
-            timeout={500}
-            classNames="menu-secondary"
-            unmountOnExit
-            onEnter={calcHeight}
-        >
-            <div className="menu">
-                <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-                    <h2>Animals</h2>
-                </DropdownItem>
-                <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
-                <DropdownItem leftIcon="🐸">Frog</DropdownItem>
-                <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
-                <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
-            </div>
-        </CSSTransition> */}
       </div>
     );
 }

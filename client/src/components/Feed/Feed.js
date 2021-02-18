@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Feed.css';
 import StoryReel from './StoryReel/StoryReel';
 import MessageSender from './MessageSender/MessageSender';
 import Post from './Post/Post';
-import posts from '../../data/posts';
 
-const Feed = () => {
+const Feed = (props) => {
+    console.log("props= ", props);
     return(
         <div className="feed">
             <StoryReel/>
             <MessageSender/>
             {
-                posts.map(post => (
+                props.posts.map(post => (
                     <Post
                         key={post.id}
                         profilePic={post.profilePic}

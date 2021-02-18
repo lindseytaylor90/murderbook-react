@@ -4,12 +4,13 @@ import './MessageSender.css';
 // icons
 import { Avatar } from '@material-ui/core'
 import { Videocam, PhotoLibrary, InsertEmoticon} from '@material-ui/icons'
+import { actionTypes } from '../../../state/reducer';
 
 // context api
 import { useStateValue } from '../../../state/Provider'
 
 const MessageSender = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user, posts }, dispatch] = useStateValue();
     const [input, setInput] = useState('');
     const [imageUrl, setImageUrl] = useState('');
 
@@ -17,7 +18,18 @@ const MessageSender = () => {
         e.preventDefault();
 
         // should add to post here
-        alert('form input =  ', input); 
+        console.log("input= ", input);
+        dispatch({
+            type: actionTypes.ADD_POST, 
+            post: {
+                message: input,
+                timestamp: new Date(),
+                profilePic: user.photoURL,
+                username: user.displayName,
+                image: imageUrl,
+                id: posts.length + 1, 
+            }
+        })
 
         // clear form
         setInput('');

@@ -6,15 +6,22 @@ import mbLogo from '../../img/mbLogo.webp';
 import mbTextLogo from '../../img/mbTextLogo.svg';
 import { Button } from '@material-ui/core';
 import user from '../../data/user';
-
+import posts from '../../data/posts';
 
 const Login = () => {
-    const [state, dispatch] = useStateValue();
+    const [dispatch] = useStateValue();
 
     const signIn = () => {
         dispatch({
             type: actionTypes.SET_USER, 
             user: user 
+        }, initPosts());
+    }
+
+    const initPosts = () => {
+        dispatch({
+            type: actionTypes.INIT_POSTS,
+            posts: posts
         });
     }
 

@@ -23,7 +23,7 @@ import mbLogo from '../../img/mbLogo.webp'
 import { useStateValue } from '../../state/Provider'
 
 const Header = () => {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
 
     return (
         <div className="header">
@@ -31,7 +31,7 @@ const Header = () => {
                 <img src={mbLogo} alt="mbLogo"/>
                 <div className="headerInput">
                     <SearchIcon />
-                    <input type="text" placeholder="Search Facebook" />
+                    <input type="text" placeholder="Search murderbook" />
                 </div>
             </div>
 

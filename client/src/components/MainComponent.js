@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Home from './HomeComponent';
+import { useStateValue } from '../state/Provider';
 
-class Main extends Component {
-
-  render() {
+function Main() {
+  const [{ posts }] = useStateValue();
+   
+  
     const HomePage =() => {
       return (
-        <Home/>
+        <Home posts={posts} />
       );
     }
 
@@ -15,7 +17,6 @@ class Main extends Component {
         <HomePage/>
       </div>
     );
-  }
 }
 
  export default Main;
