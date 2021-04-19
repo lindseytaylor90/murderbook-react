@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-murderbook/static/css/main.722efb0d.chunk.css",
-    "main.js": "/react-murderbook/static/js/main.d55c8e5f.chunk.js",
-    "main.js.map": "/react-murderbook/static/js/main.d55c8e5f.chunk.js.map",
+    "main.js": "/react-murderbook/static/js/main.cb7e4e3b.chunk.js",
+    "main.js.map": "/react-murderbook/static/js/main.cb7e4e3b.chunk.js.map",
     "runtime-main.js": "/react-murderbook/static/js/runtime-main.d7ff8eb3.js",
     "runtime-main.js.map": "/react-murderbook/static/js/runtime-main.d7ff8eb3.js.map",
     "static/js/2.05f4cbdb.chunk.js": "/react-murderbook/static/js/2.05f4cbdb.chunk.js",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.d7ff8eb3.js",
     "static/js/2.05f4cbdb.chunk.js",
     "static/css/main.722efb0d.chunk.css",
-    "static/js/main.d55c8e5f.chunk.js"
+    "static/js/main.cb7e4e3b.chunk.js"
   ]
 }
