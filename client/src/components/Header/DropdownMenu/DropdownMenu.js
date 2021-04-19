@@ -17,6 +17,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import MailIcon from '@material-ui/icons/Mail';
 import ReportIcon from '@material-ui/icons/Report';
+import baseUrl from '../../../shared';
 
 // context api
 import { useStateValue } from '../../../state/Provider'
@@ -68,7 +69,7 @@ const DropdownMenu = () => {
             onEnter={calcHeight}
         >
             <div className="menu">
-                <DropdownItemImage image={user.photoURL}>{user.displayName}</DropdownItemImage>
+                <DropdownItemImage image={baseUrl + user.photoURL}>{user.displayName}</DropdownItemImage>
 
                 <hr className="hrTag" />
                 <DropdownItem

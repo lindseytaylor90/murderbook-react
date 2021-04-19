@@ -11,11 +11,12 @@ import {
     ExpandMoreOutlined
 } from '@material-ui/icons';
 import user from '../../data/user'
+import baseUrl from '../../shared';
 
 const Sidebar = () => {
     return(
       <div className="sidebar">
-          <SidebarRow src={user.photoURL} title={user.displayName}/>
+          <SidebarRow src={baseUrl + user.photoURL} title={user.displayName}/>
           <SidebarRow Icon={LocalHospital} title="Covid-19 Information Center"/>
           <SidebarRow Icon={EmojiFlags} title="Pages"/>
           <SidebarRow Icon={People} title="Friends"/>

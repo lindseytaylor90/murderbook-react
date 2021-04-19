@@ -9,68 +9,61 @@ import { baseUrl } from '../../shared/baseUrl';
 import user from '../../data/user';
 import posts from '../../data/posts';
 
-const [state, dispatch] = useStateValue();
-
-export const fetchPosts = () => dispatch => {
-    return fetch(baseUrl + 'user')
-        .then(response => {
-            if (response.ok) {
-                return response;
-            } else {
-                const error = new Error(`Error ${response.status}: ${response.statusText}`);
-                error.response = response;
-                throw error;
-            }
-        },
-        error => {
-            const errMess = new Error(error.message);
-            throw errMess;
-        }
-    )
-    .then(response => response.json())
-    .then(posts => dispatch({
-        type: actionTypes.INIT_POSTS,
-        posts
-    }))
-    .catch(error => error);
-};
-
-export const fetchUser = () => dispatch => {
-    return fetch(baseUrl + 'user')
-        .then(response => {
-            if (response.ok) {
-                return response;
-            } else {
-                const error = new Error(`Error ${response.status}: ${response.statusText}`);
-                error.response = response;
-                throw error;
-            }
-        },
-        error => {
-            const errMess = new Error(error.message);
-            throw errMess;
-        }
-    )
-    .then(response => response.json())
-    .then(user => dispatch({
-        type: actionTypes.SET_USER, 
-        user,
-    }), initPosts())
-    .catch(error => error);
-};
-
-
-
-const initPosts = () => {
-    fetchPosts();
-}
-
 const Login = () => {
+    const [state, dispatch] = useStateValue();
+
+    const fetchPosts = () => {
+        return fetch(baseUrl + 'user')
+            .then(response => {
+                if (response.ok) {
+                    return response;
+                } else {
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                    error.response = response;
+                    throw error;
+                }
+            },
+            error => {
+                const errMess = new Error(error.message);
+                throw errMess;
+            }
+        )
+        .then(response => response.json())
+        .then(posts => dispatch({
+            type: actionTypes.INIT_POSTS,
+            posts
+        }))
+        .catch(error => error);
+    };
     
+    const fetchUser = () => {
+        return fetch(baseUrl + 'user')
+            .then(response => {
+                if (response.ok) {
+                    return response;
+                } else {
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
+                    error.response = response;
+                    throw error;
+                }
+            },
+            error => {
+                const errMess = new Error(error.message);
+                throw errMess;
+            }
+        )
+        .then(response => response.json())
+        .then(user => dispatch({
+            type: actionTypes.SET_USER, 
+            user,
+        }))
+        .catch(error => error);
+    };
+
     const signIn = () => {
         fetchUser();
+        fetchPosts();
     }
-
 
     return (
         <div className="login">

@@ -5,6 +5,8 @@ import './MessageSender.css';
 import { Avatar } from '@material-ui/core'
 import { Videocam, PhotoLibrary, InsertEmoticon} from '@material-ui/icons'
 import { actionTypes } from '../../../state/reducer';
+import { baseUrl } from '../../../shared';
+
 
 // context api
 import { useStateValue } from '../../../state/Provider'
@@ -38,7 +40,7 @@ const MessageSender = () => {
     return (
         <div className="messageSender">
             <div className="messageSenderTop">
-                <Avatar src={user.photoURL} />
+                <Avatar src={baseUrl + user.photoURL} />
                 <form>
                     <input 
                         value={input} 

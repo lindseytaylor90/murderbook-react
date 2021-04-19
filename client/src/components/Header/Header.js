@@ -15,6 +15,7 @@ import { ReactComponent as BellIcon } from '../../img/icons/bell.svg';
 import { ReactComponent as MessengerIcon } from '../../img/icons/messenger.svg';
 import { ReactComponent as CaretIcon } from '../../img/icons/caret.svg';
 import { ReactComponent as PlusIcon } from '../../img/icons/plus.svg';
+import baseUrl from '../../shared';
 
 // image
 import mbLogo from '../../img/mbLogo.webp'
@@ -55,7 +56,7 @@ const Header = () => {
             
             <div className="headerRight">
                 <div className="headerInfo">
-                    <Avatar src={user.photoURL} />
+                    <Avatar src={baseUrl + user.photoURL} />
                     <h4>{user.displayName}</h4>
                 </div>
 
