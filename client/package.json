@@ -1,17 +1,19 @@
 {
-  "name": "murderbook",
+  "name": "react-murderbook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lindseytaylor90.github.io/react-murderbook/",
   "dependencies": {
     "@material-ui/core": "4.11.3",
     "@material-ui/icons": "4.11.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
-    "firebase": "^7.19.1",
     "bootstrap": "4.5.2",
     "bootstrap-social": "5.1.1",
+    "firebase": "^7.19.1",
     "font-awesome": "4.7.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-popper": "1.3.6",
@@ -26,10 +28,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "deploy": "gh-pages -d build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
