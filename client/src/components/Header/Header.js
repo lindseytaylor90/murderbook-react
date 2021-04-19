@@ -15,7 +15,7 @@ import { ReactComponent as BellIcon } from '../../img/icons/bell.svg';
 import { ReactComponent as MessengerIcon } from '../../img/icons/messenger.svg';
 import { ReactComponent as CaretIcon } from '../../img/icons/caret.svg';
 import { ReactComponent as PlusIcon } from '../../img/icons/plus.svg';
-import baseUrl from '../../shared';
+import { baseUrl } from '../../shared/baseUrl';
 
 // image
 import mbLogo from '../../img/mbLogo.webp'

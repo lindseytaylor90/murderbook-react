@@ -5,7 +5,7 @@ import './MessageSender.css';
 import { Avatar } from '@material-ui/core'
 import { Videocam, PhotoLibrary, InsertEmoticon} from '@material-ui/icons'
 import { actionTypes } from '../../../state/reducer';
-import { baseUrl } from '../../../shared';
+import { baseUrl } from '../../../shared/baseUrl';
 
 
 // context api

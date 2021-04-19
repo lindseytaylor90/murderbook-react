@@ -17,7 +17,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import MailIcon from '@material-ui/icons/Mail';
 import ReportIcon from '@material-ui/icons/Report';
-import baseUrl from '../../../shared';
+import { baseUrl } from '../../../shared/baseUrl';
 
 // context api
 import { useStateValue } from '../../../state/Provider'

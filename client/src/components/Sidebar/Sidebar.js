@@ -11,7 +11,7 @@ import {
     ExpandMoreOutlined
 } from '@material-ui/icons';
 import user from '../../data/user'
-import baseUrl from '../../shared';
+import { baseUrl } from '../../shared/baseUrl';
 
 const Sidebar = () => {
     return(
