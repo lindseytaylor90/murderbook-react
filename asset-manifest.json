@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/react-murderbook/static/css/main.722efb0d.chunk.css",
+    "main.js": "/react-murderbook/static/js/main.d55c8e5f.chunk.js",
+    "main.js.map": "/react-murderbook/static/js/main.d55c8e5f.chunk.js.map",
+    "runtime-main.js": "/react-murderbook/static/js/runtime-main.d7ff8eb3.js",
+    "runtime-main.js.map": "/react-murderbook/static/js/runtime-main.d7ff8eb3.js.map",
+    "static/js/2.05f4cbdb.chunk.js": "/react-murderbook/static/js/2.05f4cbdb.chunk.js",
+    "static/js/2.05f4cbdb.chunk.js.map": "/react-murderbook/static/js/2.05f4cbdb.chunk.js.map",
+    "index.html": "/react-murderbook/index.html",
+    "static/css/main.722efb0d.chunk.css.map": "/react-murderbook/static/css/main.722efb0d.chunk.css.map",
+    "static/js/2.05f4cbdb.chunk.js.LICENSE.txt": "/react-murderbook/static/js/2.05f4cbdb.chunk.js.LICENSE.txt",
+    "static/media/arrow.2e552680.svg": "/react-murderbook/static/media/arrow.2e552680.svg",
+    "static/media/bell.f0c76da2.svg": "/react-murderbook/static/media/bell.f0c76da2.svg",
+    "static/media/caret.17f0a4fb.svg": "/react-murderbook/static/media/caret.17f0a4fb.svg",
+    "static/media/chevron.52254b8e.svg": "/react-murderbook/static/media/chevron.52254b8e.svg",
+    "static/media/claudinelonget.a2a5ffab.jpg": "/react-murderbook/static/media/claudinelonget.a2a5ffab.jpg",
+    "static/media/cog.8c5b9138.svg": "/react-murderbook/static/media/cog.8c5b9138.svg",
+    "static/media/css.b815478c.jpg": "/react-murderbook/static/media/css.b815478c.jpg",
+    "static/media/front-end-steps.0dcc24da.jpg": "/react-murderbook/static/media/front-end-steps.0dcc24da.jpg",
+    "static/media/front-end.dd6032e4.jpg": "/react-murderbook/static/media/front-end.dd6032e4.jpg",
+    "static/media/html.ce6f5775.jpg": "/react-murderbook/static/media/html.ce6f5775.jpg",
+    "static/media/jop.84922670.jpg": "/react-murderbook/static/media/jop.84922670.jpg",
+    "static/media/js.206acf60.jpg": "/react-murderbook/static/media/js.206acf60.jpg",
+    "static/media/mbLogo.881f2695.webp": "/react-murderbook/static/media/mbLogo.881f2695.webp",
+    "static/media/mbTextLogo.1b3a63d8.svg": "/react-murderbook/static/media/mbTextLogo.1b3a63d8.svg",
+    "static/media/messenger.39261066.svg": "/react-murderbook/static/media/messenger.39261066.svg",
+    "static/media/oj.6831bd72.jpeg": "/react-murderbook/static/media/oj.6831bd72.jpeg",
+    "static/media/plus.d5a88a59.svg": "/react-murderbook/static/media/plus.d5a88a59.svg",
+    "static/media/raecarruth.cd75c39b.jpg": "/react-murderbook/static/media/raecarruth.cd75c39b.jpg",
+    "static/media/sid.02a9a341.jpg": "/react-murderbook/static/media/sid.02a9a341.jpg",
+    "static/media/snoop.8d605c08.jpg": "/react-murderbook/static/media/snoop.8d605c08.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7ff8eb3.js",
+    "static/js/2.05f4cbdb.chunk.js",
+    "static/css/main.722efb0d.chunk.css",
+    "static/js/main.d55c8e5f.chunk.js"
+  ]
+}
