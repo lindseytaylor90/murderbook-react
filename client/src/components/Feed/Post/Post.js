@@ -14,7 +14,7 @@ const Post = ({ username, timestamp, message, image, profilePic }) => {
     return(
         <div className="post">
             <div className="postTop">
-                <Avatar className="postAvatar" src={profilePic}/>
+                <Avatar className="postAvatar" src={baseUrl + profilePic}/>
                 <div className="postTopInfo">
                     <h3>{username}</h3>
                     <p>{timestamp}</p>
@@ -24,7 +24,7 @@ const Post = ({ username, timestamp, message, image, profilePic }) => {
                 <p>{message}</p>
             </div>
             <div className="postImage">
-                <img src={ baseUrl + image} alt=""/>
+                <img src={baseUrl + image} alt=""/>
             </div> 
             <div className="postOptions">
                 <div className="postOption">

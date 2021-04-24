@@ -15,7 +15,7 @@ const MessageSender = () => {
     const [{ user, posts }, dispatch] = useStateValue();
     const [input, setInput] = useState('');
     const [imageUrl, setImageUrl] = useState('');
-
+    console.log('user = ', user);
     const handleSubmit = e => {
         e.preventDefault();
 

@@ -55,14 +55,14 @@ const Login = () => {
                 throw errMess;
             }
         )
+
         .then(response => response.json())
-        .then(user => user)
+        .then(user => fetchPosts(user))
         .catch(error => error);
     };
 
     const signIn = () => {
-        const user = fetchUser();
-        fetchPosts(user);
+        fetchUser();
     }
 
     return (
