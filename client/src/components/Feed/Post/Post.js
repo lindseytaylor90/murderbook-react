@@ -8,6 +8,7 @@ import {
     NearMe,
     ExpandMoreOutlined
 } from '@material-ui/icons';
+import { baseUrl } from '../../../shared/baseUrl';
 
 const Post = ({ username, timestamp, message, image, profilePic }) => {
     return(
@@ -23,7 +24,7 @@ const Post = ({ username, timestamp, message, image, profilePic }) => {
                 <p>{message}</p>
             </div>
             <div className="postImage">
-                <img src={image} alt=""/>
+                <img src={ baseUrl + image} alt=""/>
             </div> 
             <div className="postOptions">
                 <div className="postOption">

@@ -12,7 +12,7 @@ import posts from '../../data/posts';
 const Login = () => {
     const [state, dispatch] = useStateValue();
 
-    const fetchPosts = () => {
+    const fetchPosts = (user) => {
         return fetch(baseUrl + 'posts')
             .then(response => {
                 if (response.ok) {
@@ -30,9 +30,12 @@ const Login = () => {
         )
         .then(response => response.json())
         .then(posts => dispatch({
+            type: actionTypes.SET_USER, 
+            user,
+        },dispatch({
             type: actionTypes.INIT_POSTS,
             posts
-        }))
+        })))
         .catch(error => error);
     };
     
@@ -53,16 +56,13 @@ const Login = () => {
             }
         )
         .then(response => response.json())
-        .then(user => dispatch({
-            type: actionTypes.SET_USER, 
-            user,
-        }))
+        .then(user => user)
         .catch(error => error);
     };
 
     const signIn = () => {
-        fetchUser();
-        fetchPosts();
+        const user = fetchUser();
+        fetchPosts(user);
     }
 
     return (
