@@ -13,7 +13,7 @@ const Login = () => {
     const [state, dispatch] = useStateValue();
 
     const fetchPosts = () => {
-        return fetch(baseUrl + 'user')
+        return fetch(baseUrl + 'posts')
             .then(response => {
                 if (response.ok) {
                     return response;
