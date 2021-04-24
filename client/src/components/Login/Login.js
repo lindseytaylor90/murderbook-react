@@ -67,7 +67,6 @@ const Login = () => {
 
     return (
         <div className="login">
-            Hoolo world 2
             <div className="loginLogo">
                 <img src={mbLogo} alt=""/>
                 <img src={mbTextLogo} alt="murderbook"/>
