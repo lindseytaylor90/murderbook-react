@@ -5,7 +5,7 @@ import Widgets from './Widgets/Widgets';
 
 
 function Home(props) {
-    if (props) {
+    if (props.posts) {
         return (
             <div className="container appBody">
                 <Sidebar/>
