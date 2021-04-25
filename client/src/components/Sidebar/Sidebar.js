@@ -13,10 +13,10 @@ import {
 import user from '../../data/user'
 import { baseUrl } from '../../shared/baseUrl';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return(
       <div className="sidebar">
-          <SidebarRow src={baseUrl + user.photoURL} title={user.displayName}/>
+          <SidebarRow src={baseUrl + props.user.photoURL} title={props.user.displayName}/>
           <SidebarRow Icon={LocalHospital} title="Covid-19 Information Center"/>
           <SidebarRow Icon={EmojiFlags} title="Pages"/>
           <SidebarRow Icon={People} title="Friends"/>

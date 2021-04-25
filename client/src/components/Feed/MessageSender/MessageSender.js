@@ -11,6 +11,21 @@ import { baseUrl } from '../../../shared/baseUrl';
 // context api
 import { useStateValue } from '../../../state/Provider'
 
+const GetDateWithFormat = () => {
+    let d = new Date(),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2 ){
+        month='0' + month;
+    }
+    if (day.length < 2 ){
+        day = '0' + day;
+    }
+    return [month,day,year].join('/');
+}
+
 const MessageSender = () => {
     const [{ user, posts }, dispatch] = useStateValue();
     const [input, setInput] = useState('');
@@ -25,7 +40,7 @@ const MessageSender = () => {
             type: actionTypes.ADD_POST, 
             post: {
                 message: input,
-                timestamp: new Date(),
+                timestamp: GetDateWithFormat(new Date()),
                 profilePic: user.photoURL,
                 username: user.displayName,
                 image: imageUrl,

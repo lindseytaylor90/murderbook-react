@@ -3,12 +3,12 @@ import Home from './HomeComponent';
 import { useStateValue } from '../state/Provider';
 
 function Main() {
-  const [{ posts }] = useStateValue();
+  const [{ posts, user }] = useStateValue();
    
   
     const HomePage =() => {
       return (
-        <Home posts={posts} />
+        <Home posts={posts} user={user} />
       );
     }
 

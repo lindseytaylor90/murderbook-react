@@ -8,7 +8,7 @@ function Home(props) {
     if (props.posts) {
         return (
             <div className="container appBody">
-                <Sidebar/>
+                <Sidebar user={props.user}/>
                 <Feed posts={props.posts}/>
                 <Widgets/>
             </div>
